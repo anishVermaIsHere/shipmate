@@ -1,6 +1,13 @@
 # This App is replication of Figma design which is designed and developed in React JS. The figma design is shown below:
 
+1. Home (http://localhost:3000/)
 ![HomePage WLogin](https://user-images.githubusercontent.com/97972189/233383169-c92925a5-466e-468f-9c2f-bea75c515a53.jpg)
+
+2. Results (http://localhost:3000/results)
+![Shipping details](https://user-images.githubusercontent.com/97972189/233384148-efcc8886-84cd-45ad-a5c7-20d60470a205.jpg)
+
+3. Checkout (http://localhost:3000/checkout)
+![Booking](https://user-images.githubusercontent.com/97972189/233384214-94f04c27-c806-4cef-9a15-6ef73fa80f90.jpg)
 
 
 # Getting Started with Create React App
