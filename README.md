@@ -1,5 +1,7 @@
 # This App is replication of Figma design which is designed and developed in React JS. The figma design is shown below:
 
+![HomePage WLogin](https://user-images.githubusercontent.com/97972189/233383169-c92925a5-466e-468f-9c2f-bea75c515a53.jpg)
+
 
 # Getting Started with Create React App
 
@@ -13,7 +15,7 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-![HomePage WLogin](https://user-images.githubusercontent.com/97972189/233382953-1b936a56-99a4-4f90-bb98-c6160bd486a1.jpg)
+
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
