@@ -1,0 +1,384 @@
+:root {
+  --wave-container-background-color: #efefef;
+  --wave-1-color: #7357FF;
+  --wave-2-color: #8C76FF;
+  --wave-set-height: 10em;
+  --wave-animation-speed: 5s;
+}
+
+header {
+  padding: 40px 35px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .brand-logo {
+  font-family: Cirka, sans-serif;
+  font-weight: 700;
+}
+header nav .brand-logo .logo-start-title {
+  color: #000;
+  font-size: 42px;
+}
+header nav .brand-logo .logo-end-title {
+  color: #6F57E9;
+  font-size: 42px;
+}
+@media all and (max-width: 768px) {
+  header nav .nav-menu {
+    display: none;
+  }
+}
+header nav .nav-menu ul {
+  display: flex;
+  gap: 20px;
+}
+header nav .nav-menu ul li {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 120%;
+}
+header nav .nav-menu ul li .login-btn,
+header nav .nav-menu ul li .track-shipment-btn {
+  background-color: #6F57E9;
+  color: #fff;
+  border-radius: 12px;
+}
+header nav .nav-menu ul li .learn-more-btn {
+  border-radius: 12px;
+  padding: 14px 53px;
+  border: 2px solid #6F57E9;
+}
+
+main .hero-section {
+  margin-top: 100px;
+}
+main .hero-section .hero-head h1 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+}
+main .hero-section .hero-head h3 {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+main form .search-section {
+  box-shadow: 296px 536px 245px rgba(21, 31, 72, 0.01), 167px 302px 207px rgba(21, 31, 72, 0.05), 74px 134px 153px rgba(21, 31, 72, 0.09), 19px 34px 84px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+  background-color: #fff;
+  border-radius: 14px;
+}
+main form .search-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: 100%;
+  gap: 12px;
+  position: relative;
+}
+main form .search-section ul .search-item {
+  flex: 1 1 auto;
+  color: #868686;
+}
+main form .search-section ul .search-item:focus {
+  border: 2px solid #9747FF;
+}
+main form .search-section ul .search-item:not(:first-child) {
+  border-right: 2px solid #868686;
+}
+main form .search-section ul .search-item .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  height: 52px;
+  border-radius: 14px;
+}
+main form .search-section ul .search-item .input-wrapper input[type=search],
+main form .search-section ul .search-item .input-wrapper input[type=text] {
+  outline: none;
+  border: none;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+}
+main form .search-section ul .search-item .input-wrapper:focus-within {
+  border: 2px solid #9747FF;
+}
+main form .search-section ul .go-btn,
+main form .search-section ul .edit-btn {
+  border-radius: 8px;
+  background-color: #9747FF;
+}
+main form .search-section ul .go-btn .go-icon,
+main form .search-section ul .go-btn .edit-icon,
+main form .search-section ul .edit-btn .go-icon,
+main form .search-section ul .edit-btn .edit-icon {
+  color: #fff;
+}
+main form .search-section ul .edit-btn {
+  background-color: none;
+}
+main .services-section {
+  margin-top: 98px;
+}
+main .services-section .services h2 {
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 120%;
+  text-align: center;
+}
+main .services-section .services .service-card {
+  padding: 24px 30px;
+  box-shadow: 0px 146px 58px rgba(0, 0, 0, 0.01), 0px 82px 49px rgba(0, 0, 0, 0.05), 0px 36px 36px rgba(0, 0, 0, 0.09), 0px 9px 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+main .services-section .services .service-card .service-icon svg {
+  height: 32px;
+  width: 32px;
+}
+main .services-section .services .service-card .content {
+  color: #535353;
+}
+main .booking-section .booking-steps {
+  margin: auto;
+  margin-bottom: 60px;
+}
+main .booking-section .booking-steps ul li div .step {
+  width: 39px;
+  height: 39px;
+  border-radius: 51px;
+}
+main .booking-section .booking-container .booking-summary,
+main .booking-section .booking-container .weight-summary,
+main .booking-section .booking-container .load-summary,
+main .booking-section .booking-container .seller-summary,
+main .booking-section .booking-container .insurance-summary {
+  padding: 30px 26px;
+  background: #FFFFFF;
+  box-shadow: 0px 196px 78px rgba(21, 31, 72, 0.01), 0px 110px 66px rgba(21, 31, 72, 0.05), 0px 49px 49px rgba(21, 31, 72, 0.09), 0px 12px 27px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+  border-radius: 14px;
+}
+main .booking-section .booking-container .booking-summary .summary-title,
+main .booking-section .booking-container .weight-summary .summary-title,
+main .booking-section .booking-container .load-summary .summary-title,
+main .booking-section .booking-container .seller-summary .summary-title,
+main .booking-section .booking-container .insurance-summary .summary-title {
+  font-weight: 700;
+  font-size: 23px;
+}
+main .booking-section .booking-container .booking-summary .ship-express,
+main .booking-section .booking-container .weight-summary .ship-express,
+main .booking-section .booking-container .load-summary .ship-express,
+main .booking-section .booking-container .seller-summary .ship-express,
+main .booking-section .booking-container .insurance-summary .ship-express {
+  position: absolute;
+  right: 50%;
+  bottom: 70%;
+}
+main .booking-section .booking-container .weight-summary,
+main .booking-section .booking-container .load-summary,
+main .booking-section .booking-container .seller-summary,
+main .booking-section .booking-container .insurance-summary {
+  padding: 20px;
+  position: relative;
+}
+main .booking-section .booking-container .weight-summary .weight-title,
+main .booking-section .booking-container .weight-summary .load-title,
+main .booking-section .booking-container .weight-summary .seller-title,
+main .booking-section .booking-container .weight-summary .insurance-title,
+main .booking-section .booking-container .load-summary .weight-title,
+main .booking-section .booking-container .load-summary .load-title,
+main .booking-section .booking-container .load-summary .seller-title,
+main .booking-section .booking-container .load-summary .insurance-title,
+main .booking-section .booking-container .seller-summary .weight-title,
+main .booking-section .booking-container .seller-summary .load-title,
+main .booking-section .booking-container .seller-summary .seller-title,
+main .booking-section .booking-container .seller-summary .insurance-title,
+main .booking-section .booking-container .insurance-summary .weight-title,
+main .booking-section .booking-container .insurance-summary .load-title,
+main .booking-section .booking-container .insurance-summary .seller-title,
+main .booking-section .booking-container .insurance-summary .insurance-title {
+  font-weight: 600;
+  font-size: 19px;
+  color: #5C5C5C;
+}
+main .booking-section .booking-container .weight-summary .load-qty,
+main .booking-section .booking-container .load-summary .load-qty,
+main .booking-section .booking-container .seller-summary .load-qty,
+main .booking-section .booking-container .insurance-summary .load-qty {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+main .booking-section .booking-container .invoice-container .booking-invoice {
+  padding: 40px 34px;
+  background: #FFFFFF;
+  box-shadow: 0px 196px 78px rgba(21, 31, 72, 0.01), 0px 110px 66px rgba(21, 31, 72, 0.05), 0px 49px 49px rgba(21, 31, 72, 0.09), 0px 12px 27px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+  border-radius: 14px;
+}
+main .booking-section .booking-container .invoice-container .booking-invoice .invoice-heading {
+  display: flex;
+  align-items: center;
+}
+main .booking-section .booking-container .invoice-container .booking-invoice .invoice-heading .invoice-title {
+  font-weight: 700;
+  font-size: 23px;
+}
+main .booking-section .booking-container .invoice-container .booking-invoice .invoice-heading .invoice-tag {
+  background: #E5E6E6;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 9px;
+}
+main .booking-section .booking-container .invoice-container .booking-invoice .invoice-heading .invoice-tag .invoice-tag-title {
+  font-size: 9.9px;
+  font-weight: 400;
+}
+main .booking-section .booking-container .invoice-container .booking-invoice .invoice-total .grand-total,
+main .booking-section .booking-container .invoice-container .booking-invoice .invoice-total .grand-total-text {
+  font-weight: 700;
+  font-size: 28px;
+}
+main .booking-section .booking-container .invoice-container .booking-invoice .checkout .checkout-btn {
+  color: #fff;
+  border-radius: 14px;
+  height: 48px;
+  background-color: #9747FF;
+}
+main .results-section .booking-steps {
+  margin: auto;
+  margin-bottom: 60px;
+}
+main .results-section .booking-steps .step-service {
+  background: #FFFFFF;
+  border-radius: 14px;
+  height: 52px;
+}
+main .results-section .booking-steps ul li div .step {
+  width: 39px;
+  height: 39px;
+  border-radius: 51px;
+}
+main .results-section .results-container .results-wrapper .results-tabs {
+  background: #EBE8FF;
+  box-shadow: 14px 216px 86px rgba(21, 31, 72, 0.01), 8px 121px 73px rgba(21, 31, 72, 0.05), 3px 54px 54px rgba(21, 31, 72, 0.09), 1px 13px 30px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+  border-radius: 14px;
+}
+main .results-section .results-container .results-wrapper .results-tabs .tab {
+  border-radius: 14px;
+  color: #868686;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+main .results-section .results-container .results-wrapper .result-lists .result-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(218, 218, 218, 0.4);
+  box-shadow: 39px 216px 88px rgba(0, 0, 0, 0.01), 22px 122px 74px rgba(0, 0, 0, 0.05), 10px 54px 55px rgba(0, 0, 0, 0.09), 2px 14px 30px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+}
+
+.active-tab {
+  color: #9747FF;
+  background: #FFFFFF;
+  box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 40px 16px 40px;
+}
+
+.waves-container {
+  padding-top: 5em;
+  background-color: var(--wave-container-background-color);
+}
+
+.waves {
+  margin-bottom: -5px;
+  width: 100%;
+  height: var(--wave-set-height);
+}
+@media (min-width: 768px) {
+  .waves {
+    height: calc(var(--wave-set-height) * 1.5);
+  }
+}
+@media (min-width: 1280px) {
+  .waves {
+    height: calc(var(--wave-set-height) * 2);
+  }
+}
+.waves .wave-1 {
+  transform: translateX(50%);
+}
+.waves .wave-2 {
+  transform: translateX(90%);
+}
+.waves .wave-1 {
+  fill: var(--wave-1-color);
+}
+.waves .wave-2 {
+  fill: var(--wave-2-color);
+}
+.waves.animated .wave-1-container {
+  animation-delay: -1s;
+  animation: infinite-wave var(--wave-animation-speed) ease-in-out infinite;
+  animation-duration: calc(var(--wave-animation-speed) * 2.5);
+}
+.waves.animated .wave-1-container > use.wave-1 {
+  animation-delay: -1s;
+  animation: bobbing-wave 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+}
+.waves.animated .wave-2-container {
+  animation-delay: -2s;
+  animation: infinite-wave var(--wave-animation-speed) linear infinite;
+  animation-duration: calc(var(--wave-animation-speed) * 1);
+}
+.waves.animated .wave-2-container > use.wave-2 {
+  animation-delay: -2s;
+  animation: bobbing-wave 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+}
+.waves.animated .wave-set > use {
+  animation: infinite-wave var(--wave-animation-speed) linear infinite;
+}
+.waves.animated .wave-set > use.wave-1 {
+  animation-delay: -1s;
+  animation-duration: calc(var(--wave-animation-speed) * 2.5);
+}
+.waves.animated .wave-set > use.wave-2 {
+  animation-delay: -2s;
+  animation-duration: calc(var(--wave-animation-speed) * 1);
+}
+.waves.animated .wave-set > use.wave-1 {
+  animation-delay: -5s;
+  animation-duration: calc(var(--wave-animation-speed) * 2);
+}
+
+@keyframes infinite-wave {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes bobbing-wave {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(0.2rem);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}/*# sourceMappingURL=styles.css.map */

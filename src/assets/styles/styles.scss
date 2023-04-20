@@ -1,0 +1,504 @@
+//start
+:root {
+  --wave-container-background-color: #efefef;
+  --wave-1-color: #7357FF;
+  --wave-2-color: #8C76FF;
+  // --wave-3-color: #4b3ab9;
+  // --wave-4-color: white;
+
+  --wave-set-height: 10em;
+  //seed value gets multiplied per wave so that there's variation in speed
+  --wave-animation-speed: 5s;
+}
+
+$primary-purple: #6F57E9;
+$secondary-purple: #9747FF;
+
+
+header {
+  padding: 40px 35px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand-logo {
+      font-family: Cirka, sans-serif;
+      font-weight: 700;
+
+      .logo-start-title {
+        color: #000;
+        font-size: 42px;
+      }
+
+      .logo-end-title {
+        color: $primary-purple;
+        font-size: 42px;
+      }
+    }
+
+    .nav-menu {
+      @media all and (max-width:768px) {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        gap: 20px;
+        li {
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 120%;
+
+          .login-btn,
+          .track-shipment-btn {
+            background-color: $primary-purple;
+            color: #fff;
+            border-radius: 12px;
+          }
+
+          .learn-more-btn {
+            border-radius: 12px;
+            padding: 14px 53px;
+            border: 2px solid $primary-purple;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+main {
+  .hero-section {
+    margin-top: 100px;
+
+    .hero-head {
+      h1 {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 50px;
+        text-align: center;
+      }
+
+      h3 {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+      }
+    }
+  }
+
+  form {
+    .search-section {
+      box-shadow: 296px 536px 245px rgba(21, 31, 72, 0.01), 167px 302px 207px rgba(21, 31, 72, 0.05), 74px 134px 153px rgba(21, 31, 72, 0.09), 19px 34px 84px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+      background-color: #fff;
+      border-radius: 14px;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-basis: 100%;
+        gap: 12px;
+        position: relative;
+
+        .search-item {
+          flex: 1 1 auto;
+          color: #868686;
+
+          &:focus {
+            border: 2px solid $secondary-purple;
+          }
+
+          &:not(:first-child) {
+            border-right: 2px solid #868686;
+            // height:20px;
+          }
+
+          .input-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            height: 52px;
+            border-radius: 14px;
+
+            input[type='search'],
+            input[type='text'] {
+              outline: none;
+              border: none;
+              color:#000;
+              height: 100%;
+              width: 100%;
+              margin-right: 10px;
+            }
+            &:focus-within {
+              border: 2px solid $secondary-purple;
+            }
+
+          }
+
+        }
+
+        .go-btn,
+        .edit-btn {
+          border-radius: 8px;
+          background-color: $secondary-purple;
+
+          .go-icon,
+          .edit-icon {
+            color: #fff;
+          }
+        }
+
+        .edit-btn {
+          background-color: none;
+        }
+      }
+    }
+  }
+
+  .services-section {
+    margin-top: 98px;
+
+    .services {
+      h2 {
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 120%;
+        text-align: center;
+      }
+
+      .service-card {
+        padding: 24px 30px;
+        box-shadow: 0px 146px 58px rgba(0, 0, 0, 0.01), 0px 82px 49px rgba(0, 0, 0, 0.05), 0px 36px 36px rgba(0, 0, 0, 0.09), 0px 9px 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+
+        .service-icon {
+          svg {
+            height: 32px;
+            width: 32px;
+          }
+        }
+
+        .content {
+          color: #535353;
+        }
+      }
+    }
+  }
+
+  .booking-section {
+    .booking-steps {
+      margin: auto;
+      margin-bottom: 60px;
+
+      ul {
+        li {
+          div {
+            .step {
+              width: 39px;
+              height: 39px;
+              border-radius: 51px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .booking-container {
+
+
+      .booking-summary,
+      .weight-summary,
+      .load-summary,
+      .seller-summary,
+      .insurance-summary {
+        padding: 30px 26px;
+        background: #FFFFFF;
+        box-shadow: 0px 196px 78px rgba(21, 31, 72, 0.01), 0px 110px 66px rgba(21, 31, 72, 0.05), 0px 49px 49px rgba(21, 31, 72, 0.09), 0px 12px 27px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+        border-radius: 14px;
+
+        .summary-title {
+          font-weight: 700;
+          font-size: 23px;
+        }
+
+        .ship-express {
+          position: absolute;
+          right: 50%;
+          bottom: 70%;
+        }
+
+
+      }
+
+      .weight-summary,
+      .load-summary,
+      .seller-summary,
+      .insurance-summary {
+        padding: 20px;
+        position: relative;
+
+        .weight-title,
+        .load-title,
+        .seller-title,
+        .insurance-title {
+          font-weight: 600;
+          font-size: 19px;
+          color: #5C5C5C;
+        }
+
+        .load-qty {
+          position: absolute;
+          top: 45%;
+          left: 30%;
+        }
+      }
+
+      .invoice-container {
+        .booking-invoice {
+          padding: 40px 34px;
+          background: #FFFFFF;
+          box-shadow: 0px 196px 78px rgba(21, 31, 72, 0.01), 0px 110px 66px rgba(21, 31, 72, 0.05), 0px 49px 49px rgba(21, 31, 72, 0.09), 0px 12px 27px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+          border-radius: 14px;
+
+          .invoice-heading {
+            display: flex;
+            align-items: center;
+
+            .invoice-title {
+              font-weight: 700;
+              font-size: 23px;
+            }
+
+            .invoice-tag {
+              background: #E5E6E6;
+              border-radius: 23px;
+              display: flex;
+              align-items: center;
+              height: 20px;
+              padding: 9px;
+
+              .invoice-tag-title {
+                font-size: 9.9px;
+                font-weight: 400;
+              }
+            }
+          }
+
+          .invoice-summary {
+            .invoice-summary-item {}
+          }
+
+          .invoice-total {
+
+            .grand-total,
+            .grand-total-text {
+              font-weight: 700;
+              font-size: 28px;
+            }
+          }
+
+          .checkout {
+            .checkout-btn {
+              color: #fff;
+              border-radius: 14px;
+              height: 48px;
+              background-color: $secondary-purple;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .results-section {
+    .booking-steps {
+      margin: auto;
+      margin-bottom: 60px;
+
+      .step-service {
+        background: #FFFFFF;
+        border-radius: 14px;
+        height: 52px;
+
+      }
+
+      ul {
+        li {
+          div {
+            .step {
+              width: 39px;
+              height: 39px;
+              border-radius: 51px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .results-container {
+      .results-wrapper {
+        .results-tabs {
+          background: #EBE8FF;
+          box-shadow: 14px 216px 86px rgba(21, 31, 72, 0.01), 8px 121px 73px rgba(21, 31, 72, 0.05), 3px 54px 54px rgba(21, 31, 72, 0.09), 1px 13px 30px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+          border-radius: 14px;
+
+          .tab {
+            border-radius: 14px;
+            color: #868686;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            cursor: pointer;
+          }
+
+        }
+
+        .result-lists {
+          .result-card {
+            background: #FFFFFF;
+            border: 1px solid rgba(218, 218, 218, 0.4);
+            box-shadow: 39px 216px 88px rgba(0, 0, 0, 0.01), 22px 122px 74px rgba(0, 0, 0, 0.05), 10px 54px 55px rgba(0, 0, 0, 0.09), 2px 14px 30px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.active-tab {
+  color: $secondary-purple;
+  background: #FFFFFF;
+  box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 40px 16px 40px;
+
+}
+
+.waves-container {
+  padding-top: 5em;
+  background-color: var(--wave-container-background-color);
+}
+
+.waves {
+  margin-bottom: -5px;
+  width: 100%;
+  height: var(--wave-set-height);
+
+  @media (min-width: 768px) {
+    height: calc(var(--wave-set-height) * 1.5);
+  }
+
+  @media (min-width: 1280px) {
+    height: calc(var(--wave-set-height) * 2);
+  }
+
+  .wave-1 {
+    transform: translateX(50%);
+  }
+
+  .wave-2 {
+    transform: translateX(90%);
+  }
+
+  .wave-1 {
+    fill: var(--wave-1-color);
+  }
+
+  .wave-2 {
+    fill: var(--wave-2-color);
+  }
+
+  &.animated {
+
+    //reuse a single element, or a group of elements defined with the <g> element  of the svg
+    .wave-1-container {
+      animation-delay: -1s;
+      animation: infinite-wave var(--wave-animation-speed) ease-in-out infinite;
+      animation-duration: calc(var(--wave-animation-speed) * 2.5);
+
+      >use {
+        &.wave-1 {
+          animation-delay: -1s;
+          animation: bobbing-wave 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+        }
+      }
+    }
+
+    .wave-2-container {
+      animation-delay: -2s;
+      animation: infinite-wave var(--wave-animation-speed) linear infinite;
+      animation-duration: calc(var(--wave-animation-speed) * 1);
+
+      >use {
+        &.wave-2 {
+          animation-delay: -2s;
+          animation: bobbing-wave 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+
+        }
+      }
+    }
+
+
+
+    .wave-set>use {
+      animation: infinite-wave var(--wave-animation-speed) linear infinite;
+
+      //ensure you're using the parent selector with > use or it won't work eg: &.wave-1 not .wave-1
+      //updated to offset wave timing 
+      &.wave-1 {
+        animation-delay: -1s;
+        animation-duration: calc(var(--wave-animation-speed) * 2.5);
+      }
+
+
+      &.wave-2 {
+        animation-delay: -2s;
+        animation-duration: calc(var(--wave-animation-speed) * 1);
+      }
+
+      &.wave-1 {
+        animation-delay: -5s;
+        animation-duration: calc(var(--wave-animation-speed) * 2);
+      }
+    }
+
+  }
+}
+
+
+@keyframes infinite-wave {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+//might not be able to get this to work...
+@keyframes bobbing-wave {
+  0% {
+    transform: translatey(0);
+  }
+
+  50% {
+    transform: translatey(0.2rem);
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}

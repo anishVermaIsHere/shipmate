@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+}
+a{
+    color:inherit;
+}
+.layout {
+    /* max-width: 1440px; */
+    margin: auto;
+    background-color: #F8F9FD;
+}
+.App {
+    position: relative;
+}
+main {
+  padding: 40px 35px;
+}
+.mobile-menu {
+    display: none;
+}
+.mobile-menu svg {
+ cursor: pointer;
+}
+
+.mobile-sidebar {
+    box-shadow: 296px 536px 245px rgba(21, 31, 72, 0.01), 167px 302px 207px rgba(21, 31, 72, 0.05), 74px 134px 153px rgba(21, 31, 72, 0.09), 19px 34px 84px rgba(21, 31, 72, 0.1), 0px 0px 0px rgba(21, 31, 72, 0.1);
+    background-color: #fff;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    width:300px;
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    top:0;
+    padding: 50px 10px;
+    display: none;
+}
+
+.mobile-sidebar ul {
+    padding: 0;
+}
+.mobile-sidebar ul li {
+    font-weight: 600;
+    font-size: 19px;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+.mobile-sidebar ul li:not(:last-child){
+    border-bottom:1px solid #bebdbda3;
+}
+.mobile-sidebar ul li a {
+   color: #868686;
+   display: block;
+   transition: all 0.5s;
+   border-radius: 12px;
+}
+
+.mobile-sidebar ul li a:hover {
+    color: #fff;
+    padding-left:50px;
+    background-color: #7C62FF;
+ }
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.chat-bot {
+    position: fixed;
+    right:50px;
+    bottom:80px;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .chat-bot .chat-message {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #9747FF 0%, #7C62FF 100%);
+    box-shadow: 24px 51px 23px rgba(0, 0, 0, 0.01), 13px 29px 19px rgba(0, 0, 0, 0.05), 6px 13px 14px rgba(0, 0, 0, 0.09), 1px 3px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    height: 75px;
+    width: 75px;
+  }
+ 
+
+
+  /* */
+
+  @media all and (max-width:768px) {
+    .mobile-menu {
+        display: block;
+    }
+  }
+  @media all and (min-width:769px) {
+    .mobile-menu {
+        display: none;
+    }
+  }
