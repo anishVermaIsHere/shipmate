@@ -1,5 +1,5 @@
-# This App is replication of Figma design which is designed and developed in React JS. The figma design is shown below:
-**Celerity Consulting Private Limited - React Assignment**
+# This App is replication of Figma design which is designed and developed in ReactJS + Tailwind CSS. 
+**React Assignment - Celerity Consulting Private Limited**
 
 1. Home (http://localhost:3000/)
 ![HomePage WLogin](https://user-images.githubusercontent.com/97972189/233383169-c92925a5-466e-468f-9c2f-bea75c515a53.jpg)
